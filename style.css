@@ -1,0 +1,284 @@
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background-color: #E0F7FA;
+}
+
+h2, h1, h3 {
+  color: #7600bc;
+}
+
+/* Default Text Color for Navbar Links */
+.navbar-nav .nav-link {
+  color: #7600bc; /* White color for default text */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition effect */
+  margin: 0 15px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  color: #ffffff; /* White color when hovered */
+  background-color: #65cbfc; /* Background color when hovered */
+  border-radius: 4px; /* Optional: rounded corners for the background */
+}
+
+/* Active State (if needed) */
+.navbar-nav .nav-link.active {
+  color: #ffffff; /* White color for active link */
+  background-color: #65cbfc; /* Background color for active link */
+  border-radius: 4px; /* Optional: rounded corners for the background */
+}
+
+/*About-Me section*/
+/* General Styles */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("images/bg-about.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Profile Image */
+.profile_image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Text Section */
+.about-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+#about-me h1 {
+  font-size: 40px;
+  color: #7600bc;
+  margin-bottom: 20px;
+}
+
+#about-me p {
+  font-size: 20px;
+  /* color: rgb(128, 128, 128); */
+  color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+  }
+  
+  .about-text h1 {
+    font-size: 50px;
+  }
+  
+  .about-text p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    flex-direction: row;
+  }
+  
+  .about-text h1 {
+    font-size: 65px;
+  }
+  
+  .about-text p {
+    font-size: 25px;
+  }
+
+  .profile_image {
+    max-width: 550px;
+  }
+}
+
+
+/* Skills Section */
+.skill img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.skill:hover{
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.skill{
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Internship Section */
+.internship-card {
+  border: 2px solid #7600bc; /* Match the navbar color */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.internship-card:hover{
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.internship-card .card-title {
+  font-size: 22px;
+  color: #7600bc;
+}
+
+.internship-card .card-subtitle {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.internship-card .card-text {
+  font-size: 16px;
+  color: #333;
+}
+.container{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* Projects */
+.project {
+  border: 2px solid #7600bc; /* Match the navbar color */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.project:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #7600bc;
+}
+
+.project ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #444;
+}
+
+/* Publications Section */
+.publication-card {
+  border: 2px solid #7600bc; /* Match the navbar color */
+  border-radius: 8px;
+}
+
+.publication-card .card-title {
+  font-size: 24px;
+  color: #7600bc;
+}
+
+.publication-card .card-text {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Extra-Curricular Section */
+
+.extra-curricular{
+  border-radius: 8px;
+  border: 2px solid;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.extra-curricular:hover{
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.extra-curricular .card-title {
+  color: #7600bc; /* Color of the title */
+  font-size: 24px;
+}
+
+.extra-curricular .card-body {
+  font-size: 16px;
+}
+
+.extra-curricular .card ul {
+  padding-left: 1.5rem;
+}
+
+/* Hobbies Section */
+.hobby-card {
+  border: 2px solid #7600bc; /* Match the navbar color */
+  border-radius: 8px;
+}
+
+.hobby-card .card-title {
+  font-size: 20px;
+  color: #7600bc;
+}
+
+.hobby-card .card-text {
+  font-size: 16px;
+  color: #333;
+}
+
+/*footer*/
+footer {
+  background-color: #65cbfc; /* Dark background */
+}
+
+footer img {
+  /* filter: brightness(0) invert(1); Makes the images white */
+  transition: transform 0.3s;
+}
+
+footer a:hover img {
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+#rights{
+  font-size:24px;
+}
+
+
+/* Scroll to Top Button */
+.icon-container svg {
+  width: 40px; /* Adjust size */
+  height: 40px; /* Adjust size */
+}
+.iconbutton {
+  background-color: #7600bc;
+  position: fixed;
+  right: 3%;
+  bottom: 4%;
+  border-radius: 50%;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.iconbutton:hover {
+  transform: scale(1.1);
+}
+
+/* Add border between sections */
+section {
+  border-top: 5px solid #7600bc;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+/* Ensure sections have consistent spacing */
+section:first-of-type {
+  border: none;
+  margin-top: 0; 
+  /* No margin on the top of the first section */
+}
